@@ -1,7 +1,19 @@
-# Project Requirements for Cat Clicker
+# Project Requirements for Cat Clicker Premium
 **Visuals**
 
-* The application should display a picture of a cat and a number of clicks.
+* The application should display
+  * a list of at least 5 cats, listed by name
+
+  * an area to display the selected cat
+
+* In the cat display area, the following should be displayed
+
+  * the cat's name
+
+  * a picture of the cat
+
+  * text showing the number of clicks
+
 * The specifics of the layout do not matter, so style it however you'd like.
 
 **Interaction**
@@ -10,7 +22,13 @@
 
 **Inspiration**
 
-![Cute Cat for Inspiration](https://lh3.ggpht.com/nlI91wYNCrjjNy5f-S3CmVehIBM4cprx-JFWOztLk7vFlhYuFR6YnxcT446AvxYg4Ab7M1Fy0twaOCWYcUk=s0#w=640&h=426)
+* When a cat name is clicked in the list, the cat display area should update to show the data for the selected cat.
+
+* The number of clicks in the cat area should be unique to each cat, and should increment when the cat's picture is clicked.
+
+![Cute Cat for Inspiration](https://lh5.ggpht.com/LfjkdmOKkGLvCt-VuRlWGjAjXqTBrPjRsokTNKBtCh8IFPRetGaXIpTQGE2e7ZCUaG2azKNkz38KkbM_emA=s0#w=640&h=454)
+
+Thanks to [jetske](https://www.flickr.com/photos/jetske) for the photo.
 
 **Resources**
 
