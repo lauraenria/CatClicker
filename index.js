@@ -39,7 +39,17 @@ document.addEventListener("DOMContentLoaded", function() {
   ];
 
   let singleCat = cats[0];
+  
+  console.log(singleCat);
+  console.log(singleCat.src);
+  console.log(display);
+  
+  // setup
+  displayName.textContent = singleCat.name;
+  display.setAttribute("src", singleCat.src);
+  number.textContent = singleCat.number.toString();
 
+  // logic
   cats.forEach(cat => {
     let entry = document.createElement("li");
     let link = document.createElement("a");
