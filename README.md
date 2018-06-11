@@ -18,21 +18,25 @@
 
 **Interaction**
 
-* The number of clicks should increment when the cat picture is clicked.
-
-**Inspiration**
-
 * When a cat name is clicked in the list, the cat display area should update to show the data for the selected cat.
 
 * The number of clicks in the cat area should be unique to each cat, and should increment when the cat's picture is clicked.
 
-![Cute Cat for Inspiration](https://lh5.ggpht.com/LfjkdmOKkGLvCt-VuRlWGjAjXqTBrPjRsokTNKBtCh8IFPRetGaXIpTQGE2e7ZCUaG2azKNkz38KkbM_emA=s0#w=640&h=454)
+**Resources**
+
+Check out the earlier reading node on [how to deal with event listeners and closures](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454014/modules/271165859175461/lessons/3417188540/concepts/34803486710923). You likely will need it to get the click events for your cat list to work.
+
+* Use the model view controller  (if you can)
+
+**Inspiration**
+
+![Cute Cat for Inspiration](https://lh4.ggpht.com/dUJNejPqb_qLsV1kfWcvviqc7adxsw02BSAm8YLWNklP4lI6fQCLKXd-28uKuchtjoEUpqFN0K6kkTSDHw=s0#w=588&h=640)
 
 Thanks to [jetske](https://www.flickr.com/photos/jetske) for the photo.
 
 **Resources**
 
-In case you need a refresher on events and event listeners, here are some links.
+* [Model-View-Controller (MVC) in JavaScript](https://alexatnet.com/model-view-controller-mvc-in-javascript/)
 
 If you're writing Cat Clicker with vanilla JS (no jQuery), you'll be adding the "click" event with [elem.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.addEventListener).
 
@@ -52,3 +56,5 @@ $('#my-elem').click(function(e) {
 });
 
 ```
+
+* [Udacity soluction](https://github.com/udacity/ud989-cat-clicker-premium-vanilla/tree/master/js)
