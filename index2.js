@@ -63,12 +63,11 @@ let octopus = {
     catView.render();
   },
 
-  addNewCat : function(){
+  addNewCat: function() {
     model.cats.push(formView.newCat);
     // model array cats [last element of array]
     catListView.render(model.cats.slice(-1));
   }
-  
 };
 
 /* ======= View ======= */
@@ -124,34 +123,33 @@ let catListView = {
   }
 };
 
-
 let form = document.querySelector("#name-form");
 
 let formView = {
   init: function() {
+    this.cancel = document.querySelector(".button-cancel");
     this.admin = document.querySelector("#admin");
     let newCat = new Object();
     this.newCat = newCat;
-    console.log(newCat);
 
-    form.onsubmit = function(event){
+    form.onsubmit = function(event) {
       event.preventDefault();
       newCat.name = form.cat_name.value;
       newCat.imgSrc = form.cat_image.value;
       newCat.clickCount = form.cat_clicks.value;
       octopus.addNewCat();
-      // console.log(form.cat_name.value);
-      // console.log(form.cat_image.value);
-      // console.log(form.cat_clicks.value);
-    }
+    };
   },
 
   render: function() {
     this.admin.addEventListener("click", function() {
       form.classList.toggle("hidden");
     });
+
+    this.cancel.addEventListener("click", function() {
+      form.classList.toggle("hidden");
+    });
   }
 };
 
 octopus.init();
-
