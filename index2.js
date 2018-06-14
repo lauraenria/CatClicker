@@ -46,6 +46,10 @@ let octopus = {
     catView.render();
     catListView.init();
     catListView.render(model.cats);
+    addNewCat.init();
+    addNewCat.render();
+    formView.init();
+    formView.render();
   },
 
   getCats: function() {
@@ -59,7 +63,8 @@ let octopus = {
   incrementCount: function() {
     model.currentCat.clickCount++;
     catView.render();
-  }
+  },
+  
 };
 
 /* ======= View ======= */
@@ -115,4 +120,28 @@ let catListView = {
   }
 };
 
+let addNewCat = {
+  init: function() {
+    
+    
+  },
+
+  render: function() {}
+};
+
+let form = document.querySelector("#name-form");
+
+let formView = {
+  init: function() {
+    this.admin = document.querySelector("#admin");
+  },
+
+  render: function() {
+    this.admin.addEventListener("click", function() {
+      form.classList.toggle("hidden");
+    });
+  }
+};
+
 octopus.init();
+
