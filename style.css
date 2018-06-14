@@ -35,8 +35,11 @@ a:hover {
 }
 
 .cat-display {
+    min-width: 100%;
     width: 500px;
     height: 400px;
+    margin: 0;
+    padding: 0;
     border: solid  1p #20364d;
 }
 
@@ -45,3 +48,41 @@ a:hover {
     justify-content: space-between;
 }
 
+a, #admin,.cat-display, button  {
+    cursor: pointer;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px;
+}
+
+#admin {
+    margin-top: 10px;
+}
+
+.wrapper {
+    width: 250px;
+    height: 250px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    height: 44px;
+    background-color: #20364d;
+    color: #b0cee8; 
+}
+
+.hidden {
+    display: none;
+}
