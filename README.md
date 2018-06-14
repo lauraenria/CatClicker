@@ -2,9 +2,14 @@
 **Visuals**
 
 * The application should display
-  * a list of at least 5 cats, listed by name
+  * a list of cats by name
 
   * an area to display the selected cat
+
+ * an admin button
+
+ * an admin area with inputs for changing the cat's name, url, and number of clicks (hidden by default)
+
 
 * In the cat display area, the following should be displayed
 
@@ -22,6 +27,12 @@
 
 * The number of clicks in the cat area should be unique to each cat, and should increment when the cat's picture is clicked.
 
+*  When the admin button is clicked, the admin area should appear with the inputs filled in for the currently-selected cat.
+
+* When the cancel button in the admin area is pressed, the admin area disappears.
+
+* When the save button in the admin area is pressed, the currently-selected cat's values update with the values in the admin area, and the admin area disappears.
+
 **Resources**
 
 Check out the earlier reading node on [how to deal with event listeners and closures](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454014/modules/271165859175461/lessons/3417188540/concepts/34803486710923). You likely will need it to get the click events for your cat list to work.
@@ -30,9 +41,9 @@ Check out the earlier reading node on [how to deal with event listeners and clos
 
 **Inspiration**
 
-![Cute Cat for Inspiration](https://lh4.ggpht.com/dUJNejPqb_qLsV1kfWcvviqc7adxsw02BSAm8YLWNklP4lI6fQCLKXd-28uKuchtjoEUpqFN0K6kkTSDHw=s0#w=588&h=640)
+![Cute Cat for Inspiration](https://lh3.ggpht.com/cesD31eroFxIZ4IEeXPAJkx_8i5-haU3P9LQosGNfV-GfAPUh2bE4iw4zV6Mc9XobWOR70BQh2JAP57wZlM=s0#w=640&h=480)
 
-Thanks to [jetske](https://www.flickr.com/photos/jetske) for the photo.
+Thanks to [Doug](https://www.flickr.com/photos/deerwooduk/579761138) for the photo.
 
 **Resources**
 
