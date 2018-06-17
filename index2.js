@@ -43,7 +43,7 @@ let octopus = {
 
     //initialisation
     catView.init();
-    catView.render();
+    catView.render(model.currentCat);
     catListView.init();
     catListView.render(model.cats);
     formView.init();
@@ -60,7 +60,7 @@ let octopus = {
 
   incrementCount: function() {
     model.currentCat.clickCount++;
-    catView.render();
+    catView.render(model.currentCat);
   },
 
   addNewCat: function() {
@@ -83,10 +83,10 @@ let catView = {
     });
   },
 
-  render: function() {
-    this.img.setAttribute("src", model.currentCat.imgSrc);
-    this.catName.textContent = model.currentCat.name;
-    this.number.textContent = model.currentCat.clickCount;
+  render: function(currentCat) {
+    this.img.setAttribute("src", currentCat.imgSrc);
+    this.catName.textContent = currentCat.name;
+    this.number.textContent = currentCat.clickCount;
   }
 };
 
